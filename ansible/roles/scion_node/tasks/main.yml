@@ -29,7 +29,7 @@
        accept_hostkey=yes
   remote_user: scion
 - name: Checkout SCION VPN Gateway
-  git: repo=git@github.com:netsec-ethz/scion-vpngw.git
+  git: repo=ssh://git@github.com/netsec-ethz/scion-vpngw.git
        dest=~/scion-vpngw
        key_file=~/.ssh/deploy.scion-vpngw
        accept_hostkey=yes
