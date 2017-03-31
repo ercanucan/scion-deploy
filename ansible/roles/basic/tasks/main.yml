@@ -2,6 +2,7 @@
 - name: Create ~root/.ssh and ensure permissions=0700
   file:
     path: ~root/.ssh
+    state: directory
     owner: root
     group: root
     mode: 0700
@@ -31,6 +32,7 @@
 - name: Create ~scion/.ssh and ensure permissions=0700
   file:
     path: ~scion/.ssh
+    state: directory
     owner: scion
     group: scion
     mode: 0700
