@@ -2,7 +2,7 @@
 - name: Install Zookeeper
   apt: name=zookeeperd
 - name: Install custom Zookeeper config
-  copy: src=files/zoo.cfg
+  copy: src={{local_gen}}/{{cfg_loc}}/zk{{isd}}-{{as}}-{{zk}}/zoo.cfg
         dest=/etc/zookeeper/conf/zoo.cfg
   notify:
     - restart zookeeper
